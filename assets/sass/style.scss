@@ -1,0 +1,131 @@
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
+@import "../bower_components/font-awesome/scss/font-awesome";
+
+body {
+	background-color: #F0F0F0;
+	padding-top: 50px;
+}
+
+.nav-header {
+    height: 50px;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    z-index: 99999;
+}
+
+.head {
+    height: 50px;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    z-index: 99999;
+}
+
+#navbar-fox {
+	margin: 0px;
+	border: 0px;
+	.navbar-toggle {
+		border: 1px solid white;
+	}
+	.icon-bar {
+		background-color: white
+	}
+	a {
+		color: white;
+	}
+}
+
+.navbar-not-top {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+}
+
+.navbar-not-brand {
+	color: $navbar-inverse-color !important;
+}
+
+.navbar-not-link {
+	color: $navbar-inverse-link-color !important;
+}
+
+.navbar-top {
+	-webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+	background-color: transparent !important;
+}
+
+
+.nav-up {
+    top: -50px;
+}
+
+.image-header {
+	margin-top: -50px;
+	margin-bottom: 50px;
+
+	background-color: gray;
+	background: no-repeat center center;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	.header-text {
+		padding: 150px 0px 150px 0px;
+		color: white;
+		hr {
+			max-width: 100px;
+			margin: 15px auto;
+			border-width: 4px;
+			border-color: white;
+		}
+		.header-title {
+			text-align: center;
+		}
+		.header-subtitle {
+			text-align: center;
+		}
+	}
+}
+
+.posttags_fox {
+	a {
+		padding: 2px;
+		background-color: #E0E0E0;
+	}
+}
+
+.main_fox {
+	hr {
+		background-color: #AAA;
+		height: 1px;
+	}
+	.article_fox {
+		margin: 25px 0px 25px 0px;
+		.postheader_fox {
+			margin: 10px 0px 10px 0px;
+		}
+		.posttitle_fox {
+			margin: 10px 0px 10px 0px;
+		}
+		.date_and_tags_fox {
+			margin: 10px 0px 10px 0px;
+		}
+	}
+}
+
+.footertext_fox {
+	text-align: center;
+}

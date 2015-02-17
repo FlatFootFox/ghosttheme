@@ -1,0 +1,28 @@
+{{!< default}}
+{{> header}}
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			<main class="main_fox" role="main">
+				{{#foreach posts}}
+					<article class="article_fox" role="article" itemscope itemtype="http://schema.org/Article">
+						<header class="postheader_fox">
+							<h1 class="posttitle_fox" itemprop="headline"><a href="{{{url}}}" rel="bookmark">{{title}}</a></h1>
+						</header>
+						<div class="postcontent_fox" itemprop="articleBody">
+							{{excerpt characters="140"}}
+						</div>
+						<div class="date_and_tags_fox">Posted <time class="date_fox" datetime="{{date format="MM-DD-YYYY"}}" itemprop="datePublished">{{date format='MMMM wo, YYYY'}}</time>{{#if tags}}<span class="posttags_fox">, Under: {{tags separator=" "}}</span>{{/if}}</div>
+					</article>
+					<hr>
+				{{/foreach}}
+				{{#if pagination}}
+					<div class="pagination_fox">
+						{{{pagination}}}
+					</div>
+				{{/if}}
+			</main>
+		</div>
+	</div>
+</div>
+{{> footer}}

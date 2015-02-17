@@ -1,0 +1,72 @@
+<footer class="footer_fox">
+	<div class="container">
+		<a class="subscribe_fox icon-rss" target="_blank" href="{{@blog.url}}/rss/"><span class="hidethis_fox">Subscribe!</span></a>
+	</div>
+	<div class="container">
+		<div class="footertext_fox">All content copyright <a href="/">{{@blog.title}}</a> &copy; 2015 &bull; All rights reserved &bull; Proudly published with <a class="icon-ghost" href="http://tryghost.org" target="_blank">Ghost</a></div>
+	</div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="{{asset "js/bootstrap.min.js"}}"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	if($(window).width() < 900) {
+		$('#navbar-fox').addClass('navbar-not-top');
+		$('.navbar-brand').addClass('navbar-not-blue');
+		$('.navbar-brand').addClass('navbar-not-brand');
+		$('.navbar-link').addClass('navbar-not-link');
+	}
+});
+
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('.head').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('.head').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        //if(st + $(window).height() < $(document).height()) {
+            $('.head').removeClass('nav-up').addClass('nav-down');
+        //}
+    }
+
+    if($(window).width() > 900) {
+    if (st <= navbarHeight) {
+    	$('#navbar-fox').removeClass('navbar-not-top').addClass('navbar-top');
+		$('.navbar-brand').removeClass('navbar-not-brand');
+		$('.navbar-link').removeClass('navbar-not-link');
+    }
+    else {
+    	$('#navbar-fox').removeClass('navbar-top').addClass('navbar-not-top');
+		$('.navbar-brand').addClass('navbar-not-brand');
+		$('.navbar-link').addClass('navbar-not-link');
+    }
+	}
+
+    lastScrollTop = st;
+}
+</script>

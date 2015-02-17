@@ -1,0 +1,30 @@
+<div class="head nav-down">
+    <nav class="navbar navbar-static-top" id="navbar-fox">
+      <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        	{{#if @blog.logo}}
+        	<a class="navbar-brand" href="{{@blog.url}}">
+        		<img src="{{@blog.logo}}" alt="{{@blog.title}}" height="20px" width="20px" />
+        	</a>
+        	{{/if}}
+        	<a class="navbar-brand" href="{{@blog.url}}">
+        		{{@blog.title}}
+        	</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+    		<ul class="nav navbar-nav navbar-right">
+                <li><a class="navbar-link" href="#">Home</a></li>
+    			<li><a class="navbar-link" href="#">About</a></li>
+    			<li><a class="navbar-link" href="#">Projects</a></li>
+    			<li><a class="navbar-link" href="#">Contact</a></li>
+    		</ul>
+    	</div>
+      </div>
+    </nav>
+</div>
