@@ -178,7 +178,8 @@
 .xml .hljs-cdata {
   opacity: 0.7;
 }
-;/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+;@import url(http://fonts.googleapis.com/css?family=Raleway:300,800);
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -6378,7 +6379,9 @@ body {
 
 #navbar-fox {
   margin: 0px;
-  border: 0px; }
+  border: 0px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800; }
   #navbar-fox .navbar-toggle {
     border: 1px solid white; }
   #navbar-fox .icon-bar {
@@ -6430,13 +6433,28 @@ body {
       border-width: 4px;
       border-color: white; }
     .image-header .header-text .header-title {
-      text-align: center; }
+      text-align: center;
+      margin: 0px;
+      font-size: 80px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 800; }
     .image-header .header-text .header-subtitle {
-      text-align: center; }
+      text-align: center;
+      padding: 5px 0px 0px 0px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300; }
 
 .posttags_fox a {
   padding: 2px;
   background-color: #E0E0E0; }
+
+.posttitle_fox {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800; }
+
+.postcontent_fox {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300; }
 
 .main_fox hr {
   background-color: #AAA;
