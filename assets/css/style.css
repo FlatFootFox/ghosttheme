@@ -1,4 +1,4 @@
-/*! Ghosttheme - v1.0.0 - 2015-02-17
+/*! Ghosttheme - v1.0.0 - 2015-02-19
 * Copyright (c) 2015 FlatFootFox - MIT License
 */
 
@@ -6449,6 +6449,9 @@ body {
     margin: 10px 0px 10px 0px; }
   .main_fox .article_fox .date_and_tags_fox {
     margin: 10px 0px 10px 0px; }
+
+.subscribe_fox {
+  text-align: center; }
 
 .footertext_fox {
   text-align: center; }
