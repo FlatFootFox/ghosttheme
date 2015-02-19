@@ -126,10 +126,20 @@ body {
 	}
 }
 
+.endpost_fox {
+	background-color: #AAA;
+	height: 1px;
+}
+
 .subscribe_fox {
 	text-align: center;
+	padding: 20px 0px 20px 0px;
+	.icon_fox {
+		padding: 0px 5px 0px 5px;
+	}
 }
 
 .footertext_fox {
 	text-align: center;
+	padding: 0px 0px 30px 0px;
 }
