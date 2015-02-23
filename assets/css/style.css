@@ -178,7 +178,7 @@
 .xml .hljs-cdata {
   opacity: 0.7;
 }
-;@import url(http://fonts.googleapis.com/css?family=Raleway:300,800);
+;@import url(http://fonts.googleapis.com/css?family=Exo+2:200,800);
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -6436,25 +6436,25 @@ body {
       text-align: center;
       margin: 0px;
       font-size: 80px;
-      font-family: 'Raleway', sans-serif;
+      font-family: 'Exo 2', sans-serif;
       font-weight: 800; }
     .image-header .header-text .header-subtitle {
       text-align: center;
       padding: 5px 0px 0px 0px;
-      font-family: 'Raleway', sans-serif;
-      font-weight: 300; }
+      font-family: 'Exo 2', sans-serif;
+      font-weight: 200; }
 
 .posttags_fox a {
   padding: 2px;
   background-color: #E0E0E0; }
 
 .posttitle_fox {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   font-weight: 800; }
 
 .postcontent_fox {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300; }
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 200; }
 
 .main_fox hr {
   background-color: #AAA;
