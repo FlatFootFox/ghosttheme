@@ -1,4 +1,4 @@
-/*! Ghosttheme - v1.0.0 - 2015-02-19
+/*! Ghosttheme - v1.0.0 - 2015-02-23
 * Copyright (c) 2015 FlatFootFox - MIT License
 */
 
@@ -6435,7 +6435,7 @@ body {
     .image-header .header-text .header-title {
       text-align: center;
       margin: 0px;
-      font-size: 80px;
+      font-size: 70px;
       font-family: 'Exo 2', sans-serif;
       font-weight: 800; }
     .image-header .header-text .header-subtitle {
