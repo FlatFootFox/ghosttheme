@@ -1,4 +1,4 @@
-/*! Ghosttheme - v1.0.0 - 2015-02-23
+/*! Ghosttheme - v1.0.0 - 2015-03-10
 * Copyright (c) 2015 FlatFootFox - MIT License
 */
 
@@ -178,8 +178,7 @@
 .xml .hljs-cdata {
   opacity: 0.7;
 }
-;@import url(http://fonts.googleapis.com/css?family=Exo+2:200,800);
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+;/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -6380,8 +6379,8 @@ body {
 #navbar-fox {
   margin: 0px;
   border: 0px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800; }
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; }
   #navbar-fox .navbar-toggle {
     border: 1px solid white; }
   #navbar-fox .icon-bar {
@@ -6436,25 +6435,30 @@ body {
       text-align: center;
       margin: 0px;
       font-size: 70px;
-      font-family: 'Exo 2', sans-serif;
-      font-weight: 800; }
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 900; }
     .image-header .header-text .header-subtitle {
       text-align: center;
       padding: 5px 0px 0px 0px;
-      font-family: 'Exo 2', sans-serif;
+      font-family: 'Source Sans Pro', serif;
       font-weight: 200; }
 
 .posttags_fox a {
   padding: 2px;
-  background-color: #E0E0E0; }
+  background-color: #E0E0E0;
+  color: #333333; }
 
 .posttitle_fox {
-  font-family: 'Exo 2', sans-serif;
-  font-weight: 800; }
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+  font-size: 36px; }
+  .posttitle_fox a {
+    color: #333333; }
 
 .postcontent_fox {
-  font-family: 'Exo 2', sans-serif;
-  font-weight: 200; }
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  font-size: 24px; }
 
 .main_fox hr {
   background-color: #AAA;
@@ -6466,7 +6470,11 @@ body {
   .main_fox .article_fox .posttitle_fox {
     margin: 10px 0px 10px 0px; }
   .main_fox .article_fox .date_and_tags_fox {
-    margin: 10px 0px 10px 0px; }
+    font-family: 'Neutron', serif;
+    font-weight: 200;
+    margin: 10px 0px 10px 0px;
+    font-size: 18px;
+    color: gray; }
 
 .endpost_fox {
   background-color: #AAA;
@@ -6477,6 +6485,11 @@ body {
   padding: 20px 0px 20px 0px; }
   .subscribe_fox .icon_fox {
     padding: 0px 5px 0px 5px; }
+
+.pagination_fox .older-posts {
+  border-radius: 0px; }
+.pagination_fox .newer-posts {
+  border-radius: 0px; }
 
 .footertext_fox {
   text-align: center;

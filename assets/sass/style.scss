@@ -1,5 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Exo+2:200,800);
-
 @import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
 @import "../bower_components/font-awesome/scss/font-awesome";
 
@@ -39,8 +37,8 @@ body {
 		color: white;
 	}
 
-	font-family: 'Raleway', sans-serif;
-	font-weight: 800;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
 }
 
 .navbar-not-top {
@@ -100,13 +98,13 @@ body {
 			text-align: center;
 			margin: 0px;
 			font-size: 70px;
-			font-family: 'Exo 2', sans-serif;
-			font-weight: 800;
+			font-family: 'Source Sans Pro', sans-serif;
+			font-weight: 900;
 		}
 		.header-subtitle {
 			text-align: center;
 			padding: 5px 0px 0px 0px;
-			font-family: 'Exo 2', sans-serif;
+			font-family: 'Source Sans Pro', serif;
 			font-weight: 200;
 		}
 	}
@@ -116,17 +114,21 @@ body {
 	a {
 		padding: 2px;
 		background-color: #E0E0E0;
+		color: #333333;
 	}
 }
 
 .posttitle_fox {
-	font-family: 'Exo 2', sans-serif;
-	font-weight: 800;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 900;
+	font-size: 36px;
+	a { color: #333333 }
 }
 
 .postcontent_fox {
-	font-family: 'Exo 2', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 200;
+	font-size: 24px;
 }
 
 .main_fox {
@@ -143,7 +145,11 @@ body {
 			margin: 10px 0px 10px 0px;
 		}
 		.date_and_tags_fox {
+			font-family: 'Neutron', serif;
+			font-weight: 200;
 			margin: 10px 0px 10px 0px;
+			font-size: 18px;
+			color: gray;
 		}
 	}
 }
@@ -158,6 +164,15 @@ body {
 	padding: 20px 0px 20px 0px;
 	.icon_fox {
 		padding: 0px 5px 0px 5px;
+	}
+}
+
+.pagination_fox {
+	.older-posts {
+		border-radius: 0px;
+	}
+	.newer-posts {
+		border-radius: 0px;
 	}
 }
 
