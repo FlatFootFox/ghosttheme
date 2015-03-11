@@ -1,4 +1,4 @@
-/*! Ghosttheme - v1.0.0 - 2015-03-10
+/*! Ghosttheme - v1.0.0 - 2015-03-11
 * Copyright (c) 2015 FlatFootFox - MIT License
 */
 
@@ -5351,7 +5351,7 @@ button.close {
 .fa-phone-square:before {
   content: "\f098"; }
 
-.fa-twitter:before {
+.fa-twitter:before, .fa-twitter-fox:before {
   content: "\f099"; }
 
 .fa-facebook:before {
@@ -6360,6 +6360,9 @@ body {
   background-color: #F0F0F0;
   padding-top: 50px; }
 
+a:hover {
+  text-decoration: none; }
+
 .nav-header {
   height: 50px;
   position: fixed;
@@ -6382,7 +6385,9 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700; }
   #navbar-fox .navbar-toggle {
-    border: 1px solid white; }
+    border: 1px solid #777777; }
+    #navbar-fox .navbar-toggle .icon-bar {
+      background-color: #777777; }
   #navbar-fox .icon-bar {
     background-color: white; }
   #navbar-fox a {
@@ -6423,9 +6428,15 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  @media (max-width: 767px) {
+    .image-header {
+      margin-bottom: 0px; } }
   .image-header .header-text {
     padding: 150px 0px 150px 0px;
     color: white; }
+    @media (max-width: 767px) {
+      .image-header .header-text {
+        padding: 55px 0px 15px 0px; } }
     .image-header .header-text hr {
       max-width: 100px;
       margin: 15px auto;
@@ -6441,12 +6452,47 @@ body {
       text-align: center;
       padding: 5px 0px 0px 0px;
       font-family: 'Source Sans Pro', serif;
-      font-weight: 200; }
+      font-weight: 300; }
 
-.posttags_fox a {
-  padding: 2px;
-  background-color: #E0E0E0;
-  color: #333333; }
+.image-header-post {
+  margin-top: -50px;
+  margin-bottom: 25px;
+  background-color: gray;
+  background: no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media (max-width: 767px) {
+    .image-header-post {
+      margin-bottom: 0px; } }
+  .image-header-post .header-text {
+    padding: 100px 0px 100px 0px;
+    color: white; }
+    @media (max-width: 767px) {
+      .image-header-post .header-text {
+        padding: 60px 0px 15px 0px; } }
+    .image-header-post .header-text hr {
+      max-width: 100px;
+      margin: 15px auto;
+      border-width: 4px;
+      border-color: white; }
+    .image-header-post .header-text .post-title {
+      text-align: left;
+      margin: 0px;
+      font-size: 70px;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 900; }
+      @media (max-width: 767px) {
+        .image-header-post .header-text .post-title {
+          font-size: 50px; } }
+    .image-header-post .header-text .post-subtitle {
+      text-align: left;
+      padding: 0px 0px 0px 0px;
+      font-family: 'Source Sans Pro', serif;
+      font-weight: 300; }
+    .image-header-post .header-text .post-subtitle .posttags_fox {
+      color: white; }
 
 .posttitle_fox {
   font-family: 'Source Sans Pro', sans-serif;
@@ -6454,12 +6500,22 @@ body {
   font-size: 36px; }
   .posttitle_fox a {
     color: #333333; }
+  .posttitle_fox a:hover {
+    color: #2a6596;
+    text-decoration: none; }
 
-.postcontent_fox {
+.postexcerpt_fox {
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 24px; }
 
+.postcontent_fox {
+  font-family: 'Merriweather', sans-serif;
+  font-weight: 300;
+  font-size: 18px; }
+
+.main_fox img {
+  width: 100%; }
 .main_fox hr {
   background-color: #AAA;
   height: 1px; }
@@ -6470,11 +6526,19 @@ body {
   .main_fox .article_fox .posttitle_fox {
     margin: 10px 0px 10px 0px; }
   .main_fox .article_fox .date_and_tags_fox {
-    font-family: 'Neutron', serif;
-    font-weight: 200;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-weight: 300;
     margin: 10px 0px 10px 0px;
-    font-size: 18px;
+    font-size: 16px;
     color: gray; }
+.main_fox .posttags_fox a {
+  padding: 3px 6px 3px 6px;
+  background-color: #fafafa;
+  color: #428bca; }
+.main_fox .posttags_fox a:hover {
+  color: #2a6596;
+  text-decoration: none; }
 
 .endpost_fox {
   background-color: #AAA;
@@ -6487,10 +6551,13 @@ body {
     padding: 0px 5px 0px 5px; }
 
 .pagination_fox .older-posts {
-  border-radius: 0px; }
+  border-radius: 0px;
+  color: #333333; }
 .pagination_fox .newer-posts {
-  border-radius: 0px; }
+  border-radius: 0px;
+  color: #333333; }
 
 .footertext_fox {
   text-align: center;
   padding: 0px 0px 30px 0px; }
+

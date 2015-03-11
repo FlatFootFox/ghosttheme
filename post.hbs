@@ -1,16 +1,27 @@
 {{!< default}}
-{{> header}}
+<div class="image-header-post" style="background-image: url('{{asset 'images/post-bg.jpg'}}');">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="header-text">
+                    {{#post}}
+                    <h1 class="post-title">{{title}}</h1>
+                    <h3 class="post-subtitle">
+                        <time class="date_fox" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time>
+                    </h3>
+                    {{#if tags}}<h4 class="post-subtitle posttags_fox">Posted Under: {{tags separator=", "}}</h4>{{/if}}
+                    {{/post}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="container">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <main class="main_fox" role="main">
                 {{#post}}
                     <article class="article_fox" role="article" itemscope itemtype="http://schema.org/Article">
-                    <header class="postheader_fox">
-                        <time class="date_fox" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time>
-                        {{#if tags}}<span class="posttags_fox">{{tags separator=" | "}}</span>{{/if}}
-                        <h1 class="posttitle_fox" itemprop="headline">{{title}}</h1>
-                    </header>
                     <div class="postcontent_fox" itemprop="articleBody">
                         {{content}}
                     </div>
