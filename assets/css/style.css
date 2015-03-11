@@ -5357,7 +5357,7 @@ button.close {
 .fa-facebook:before {
   content: "\f09a"; }
 
-.fa-github:before {
+.fa-github:before, .fa-github-fox:before {
   content: "\f09b"; }
 
 .fa-unlock:before {
@@ -6416,6 +6416,9 @@ a:hover {
   transform: translate3d(0, 0, 0);
   background-color: transparent !important; }
 
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: transparent; }
+
 .nav-up {
   top: -50px; }
 
@@ -6491,8 +6494,10 @@ a:hover {
       padding: 0px 0px 0px 0px;
       font-family: 'Source Sans Pro', serif;
       font-weight: 300; }
-    .image-header-post .header-text .post-subtitle .posttags_fox {
-      color: white; }
+      .image-header-post .header-text .post-subtitle a {
+        color: white; }
+      .image-header-post .header-text .post-subtitle a:hover {
+        color: #2a6596; }
 
 .posttitle_fox {
   font-family: 'Source Sans Pro', sans-serif;
@@ -6560,4 +6565,5 @@ a:hover {
 .footertext_fox {
   text-align: center;
   padding: 0px 0px 30px 0px; }
+
 

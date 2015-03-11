@@ -77,6 +77,10 @@ a:hover {
 	background-color: transparent !important;
 }
 
+.nav > li > a:hover, .nav > li > a:focus {
+	background-color: transparent;
+}
+
 
 .nav-up {
     top: -50px;
@@ -167,9 +171,12 @@ a:hover {
 			padding: 0px 0px 0px 0px;
 			font-family: 'Source Sans Pro', serif;
 			font-weight: 300;
-		}
-		.post-subtitle .posttags_fox {
-			color: white; 
+			a {
+				color: white;
+			}
+			a:hover {
+				color: $link-hover-color;
+			}
 		}
 	}
 }
@@ -269,4 +276,8 @@ img {
 
 .fa-twitter-fox {
 	@extend .fa-twitter;
+}
+
+.fa-github-fox {
+	@extend .fa-github;
 }
