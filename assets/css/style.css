@@ -1,4 +1,4 @@
-/*! Ghosttheme - v1.0.0 - 2015-03-11
+/*! Ghosttheme - v1.0.0 - 2015-03-15
 * Copyright (c) 2015 FlatFootFox - MIT License
 */
 
@@ -6358,7 +6358,9 @@ button.close {
 
 body {
   background-color: #F0F0F0;
-  padding-top: 50px; }
+  padding-top: 50px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 300; }
 
 a:hover {
   text-decoration: none; }
@@ -6382,7 +6384,7 @@ a:hover {
 #navbar-fox {
   margin: 0px;
   border: 0px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 700; }
   #navbar-fox .navbar-toggle {
     border: 1px solid #777777; }
@@ -6446,15 +6448,15 @@ a:hover {
       border-width: 4px;
       border-color: white; }
     .image-header .header-text .header-title {
-      text-align: center;
+      text-align: left;
       margin: 0px;
       font-size: 70px;
       font-family: 'Source Sans Pro', sans-serif;
-      font-weight: 900; }
+      font-weight: 700; }
     .image-header .header-text .header-subtitle {
-      text-align: center;
+      text-align: left;
       padding: 5px 0px 0px 0px;
-      font-family: 'Source Sans Pro', serif;
+      font-family: 'Merriweather', serif;
       font-weight: 300; }
 
 .image-header-post {
@@ -6485,14 +6487,14 @@ a:hover {
       margin: 0px;
       font-size: 70px;
       font-family: 'Source Sans Pro', sans-serif;
-      font-weight: 900; }
+      font-weight: 700; }
       @media (max-width: 767px) {
         .image-header-post .header-text .post-title {
           font-size: 50px; } }
     .image-header-post .header-text .post-subtitle {
       text-align: left;
       padding: 0px 0px 0px 0px;
-      font-family: 'Source Sans Pro', serif;
+      font-family: 'Merriweather', serif;
       font-weight: 300; }
       .image-header-post .header-text .post-subtitle a {
         color: white; }
@@ -6501,7 +6503,7 @@ a:hover {
 
 .posttitle_fox {
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 36px; }
   .posttitle_fox a {
     color: #333333; }
@@ -6515,7 +6517,7 @@ a:hover {
   font-size: 24px; }
 
 .postcontent_fox {
-  font-family: 'Merriweather', sans-serif;
+  font-family: 'Merriweather', serif;
   font-weight: 300;
   font-size: 18px; }
 
@@ -6551,9 +6553,22 @@ a:hover {
 
 .subscribe_fox {
   text-align: center;
-  padding: 20px 0px 20px 0px; }
+  padding: 0px 0px 20px 0px; }
   .subscribe_fox .icon_fox {
-    padding: 0px 5px 0px 5px; }
+    padding: 0px 5px 0px 5px;
+    text-shadow: 1px 1px 1px #ccc; }
+  .subscribe_fox .fa-rss {
+    background-color: #428bca;
+    padding: 12px; }
+  .subscribe_fox .fa-envelope {
+    background-color: #428bca;
+    padding: 12px; }
+  .subscribe_fox .fa-twitter-fox {
+    background-color: #428bca;
+    padding: 12px; }
+  .subscribe_fox .fa-github-fox {
+    background-color: #428bca;
+    padding: 12px; }
 
 .pagination_fox .older-posts {
   border-radius: 0px;
@@ -6562,8 +6577,11 @@ a:hover {
   border-radius: 0px;
   color: #333333; }
 
+.footer-greeting {
+  margin-top: 0px; }
+
 .footertext_fox {
   text-align: center;
-  padding: 0px 0px 30px 0px; }
+  padding: 0px 0px 20px 0px; }
 
 

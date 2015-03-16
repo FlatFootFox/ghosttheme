@@ -2,10 +2,17 @@
 @import "../bower_components/font-awesome/scss/font-awesome";
 
 $background: #F0F0F0;
+$sans-font: 'Source Sans Pro', sans-serif;
+$serif-font: 'Merriweather', serif;
+$sans-weight: 300;
+$sans-weight-bold: 700;
+$serif-weight: 300;
 
 body {
 	background-color: $background;
 	padding-top: 50px;
+	font-family: $sans-font;
+	font-family: $sans-weight;
 }
 
 a:hover { 
@@ -46,8 +53,8 @@ a:hover {
 		color: white;
 	}
 
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
+	font-family: $sans-font;
+	font-weight: $sans-weight-bold;
 }
 
 .navbar-not-top {
@@ -115,17 +122,17 @@ a:hover {
 			border-color: white;
 		}
 		.header-title {
-			text-align: center;
+			text-align: left;
 			margin: 0px;
 			font-size: 70px;
-			font-family: 'Source Sans Pro', sans-serif;
-			font-weight: 900;
+			font-family: $sans-font;
+			font-weight: $sans-weight-bold;
 		}
 		.header-subtitle {
-			text-align: center;
+			text-align: left;
 			padding: 5px 0px 0px 0px;
-			font-family: 'Source Sans Pro', serif;
-			font-weight: 300;
+			font-family: $serif-font;
+			font-weight: $serif-weight;
 		}
 	}
 }
@@ -163,14 +170,14 @@ a:hover {
 			margin: 0px;
 			font-size: 70px;
 			@media (max-width: $screen-xs-max) { font-size: 50px; }
-			font-family: 'Source Sans Pro', sans-serif;
-			font-weight: 900;
+			font-family: $sans-font;
+			font-weight: $sans-weight-bold;
 		}
 		.post-subtitle {
 			text-align: left;
 			padding: 0px 0px 0px 0px;
-			font-family: 'Source Sans Pro', serif;
-			font-weight: 300;
+			font-family: $serif-font;
+			font-weight: $serif-weight;
 			a {
 				color: white;
 			}
@@ -184,8 +191,8 @@ a:hover {
 
 
 .posttitle_fox {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 900;
+	font-family: $sans-font;
+	font-weight: $sans-weight-bold;
 	font-size: 36px;
 	a { color: #333333 }
 	a:hover { 
@@ -195,14 +202,14 @@ a:hover {
 }
 
 .postexcerpt_fox {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 300;
+	font-family: $sans-font;;
+	font-weight: $serif-weight;
 	font-size: 24px;
 }
 
 .postcontent_fox {
-	font-family: 'Merriweather', sans-serif;
-	font-weight: 300;
+	font-family: $serif-font;
+	font-weight: $serif-weight;
 	font-size: 18px;
 }
 
@@ -252,9 +259,27 @@ img {
 
 .subscribe_fox {
 	text-align: center;
-	padding: 20px 0px 20px 0px;
+	padding: 0px 0px 20px 0px;
 	.icon_fox {
 		padding: 0px 5px 0px 5px;
+		text-shadow: 1px 1px 1px #ccc;
+	}
+	$subscribe_padding: 12px;
+	.fa-rss {
+		background-color: $link-color;
+		padding: $subscribe_padding;
+	}
+	.fa-envelope {
+		background-color: $link-color;
+		padding: $subscribe_padding;
+	}
+	.fa-twitter-fox {
+		background-color: $link-color;
+		padding: $subscribe_padding;
+	}
+	.fa-github-fox {
+		background-color: $link-color;
+		padding: $subscribe_padding;
 	}
 }
 
@@ -269,9 +294,13 @@ img {
 	}
 }
 
+.footer-greeting {
+	margin-top: 0px;
+}
+
 .footertext_fox {
 	text-align: center;
-	padding: 0px 0px 30px 0px;
+	padding: 0px 0px 20px 0px;
 }
 
 .fa-twitter-fox {
