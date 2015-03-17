@@ -10,7 +10,7 @@
 							<h1 class="posttitle_fox" itemprop="headline"><a href="{{{url}}}" rel="bookmark">{{title}}</a></h1>
 						</header>
 						<div class="postexcerpt_fox" itemprop="articleBody">
-							{{excerpt words="20"}}
+							{{excerpt words="20"}} <span class="read-more"><a href="{{{url}}}">Read More &raquo;</a></span>
 						</div>
 						<div class="date_and_tags_fox">Posted <time class="date_fox" datetime="{{date format="MM-DD-YYYY"}}" itemprop="datePublished">{{date format='MMMM wo, YYYY'}}</time>{{#if tags}}<span class="posttags_fox">, Under: {{tags separator=" "}}</span>{{/if}}</div>
 					</article>
@@ -25,4 +25,5 @@
 		</div>
 	</div>
 </div>
+<hr class="endpost_fox">
 {{> footer}}

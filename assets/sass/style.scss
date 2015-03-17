@@ -52,6 +52,9 @@ a:hover {
 	a {
 		color: white;
 	}
+	a:hover {
+		color: $link-hover-color;
+	}
 
 	font-family: $sans-font;
 	font-weight: $sans-weight-bold;
@@ -70,6 +73,10 @@ a:hover {
 
 .navbar-not-link {
 	color: $navbar-inverse-link-color !important;
+}
+
+a.navbar-not-link:hover, a.navbar-not-brand:hover {
+	color: $link-hover-color !important;
 }
 
 .navbar-top {
@@ -188,39 +195,44 @@ a:hover {
 	}
 }
 
-
-
-.posttitle_fox {
-	font-family: $sans-font;
-	font-weight: $sans-weight-bold;
-	font-size: 36px;
-	a { color: #333333 }
-	a:hover { 
-		color: $link-hover-color;
-		text-decoration: none;
-	}
-}
-
-.postexcerpt_fox {
-	font-family: $sans-font;;
-	font-weight: $serif-weight;
-	font-size: 24px;
-}
-
-.postcontent_fox {
-	font-family: $serif-font;
-	font-weight: $serif-weight;
-	font-size: 18px;
-}
-
 .main_fox {
-
-img {
-	width: 100%;
-}
+	img {
+		width: 100%;
+	}
 	hr {
 		background-color: #AAA;
 		height: 1px;
+	}
+	blockquote {
+		border-left: 1px solid;
+		padding: 5px 20px 5px 10px;
+		margin: 0px 0px 20px 20px;
+		color: #888;
+	}
+	.posttitle_fox {
+		font-family: $sans-font;
+		font-weight: $sans-weight-bold;
+		font-size: 36px;
+		a { color: #333333 }
+		a:hover { 
+			color: $link-hover-color;
+		}
+	}
+
+	.postexcerpt_fox {
+		font-family: $sans-font;;
+		font-weight: $serif-weight;
+		font-size: 24px;
+	}
+
+	.postcontent_fox {
+		font-family: $serif-font;
+		font-weight: $serif-weight;
+		font-size: 18px;
+	}
+	.read-more {
+		font-size: 24px;
+		padding: 5px 0px 5px 0px;
 	}
 	.article_fox {
 		margin: 25px 0px 25px 0px;
@@ -252,36 +264,6 @@ img {
 	}
 }
 
-.endpost_fox {
-	background-color: #AAA;
-	height: 1px;
-}
-
-.subscribe_fox {
-	text-align: center;
-	padding: 0px 0px 20px 0px;
-	.icon_fox {
-		padding: 0px 5px 0px 5px;
-		text-shadow: 1px 1px 1px #ccc;
-	}
-	$subscribe_padding: 12px;
-	.fa-rss {
-		background-color: $link-color;
-		padding: $subscribe_padding;
-	}
-	.fa-envelope {
-		background-color: $link-color;
-		padding: $subscribe_padding;
-	}
-	.fa-twitter-fox {
-		background-color: $link-color;
-		padding: $subscribe_padding;
-	}
-	.fa-github-fox {
-		background-color: $link-color;
-		padding: $subscribe_padding;
-	}
-}
 
 .pagination_fox {
 	.older-posts {
@@ -292,6 +274,22 @@ img {
 		border-radius: 0px;
 		color: #333333;
 	}
+}
+
+.endpost_fox {
+	background-color: #AAA;
+	height: 1px;
+}
+
+.subscribe_fox {
+	text-align: center;
+	padding: 20px 0px 20px 0px;
+	.icon_fox {
+		padding: 0px 5px 0px 5px;
+		text-shadow: 1px 1px 1px #ccc;
+
+	}
+
 }
 
 .footer-greeting {

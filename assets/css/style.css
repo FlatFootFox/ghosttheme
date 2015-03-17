@@ -1,4 +1,4 @@
-/*! Ghosttheme - v1.0.0 - 2015-03-15
+/*! Ghosttheme - v1.0.0 - 2015-03-16
 * Copyright (c) 2015 FlatFootFox - MIT License
 */
 
@@ -6394,6 +6394,8 @@ a:hover {
     background-color: white; }
   #navbar-fox a {
     color: white; }
+  #navbar-fox a:hover {
+    color: #2a6596; }
 
 .navbar-not-top {
   background-color: rgba(255, 255, 255, 0.9);
@@ -6406,6 +6408,9 @@ a:hover {
 
 .navbar-not-link {
   color: #777777 !important; }
+
+a.navbar-not-link:hover, a.navbar-not-brand:hover {
+  color: #2a6596 !important; }
 
 .navbar-top {
   -webkit-transition: background-color 0.3s;
@@ -6501,31 +6506,35 @@ a:hover {
       .image-header-post .header-text .post-subtitle a:hover {
         color: #2a6596; }
 
-.posttitle_fox {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 700;
-  font-size: 36px; }
-  .posttitle_fox a {
-    color: #333333; }
-  .posttitle_fox a:hover {
-    color: #2a6596;
-    text-decoration: none; }
-
-.postexcerpt_fox {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
-  font-size: 24px; }
-
-.postcontent_fox {
-  font-family: 'Merriweather', serif;
-  font-weight: 300;
-  font-size: 18px; }
-
 .main_fox img {
   width: 100%; }
 .main_fox hr {
   background-color: #AAA;
   height: 1px; }
+.main_fox blockquote {
+  border-left: 1px solid;
+  padding: 5px 20px 5px 10px;
+  margin: 0px 0px 20px 20px;
+  color: #888; }
+.main_fox .posttitle_fox {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  font-size: 36px; }
+  .main_fox .posttitle_fox a {
+    color: #333333; }
+  .main_fox .posttitle_fox a:hover {
+    color: #2a6596; }
+.main_fox .postexcerpt_fox {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 24px; }
+.main_fox .postcontent_fox {
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-size: 18px; }
+.main_fox .read-more {
+  font-size: 24px;
+  padding: 5px 0px 5px 0px; }
 .main_fox .article_fox {
   margin: 25px 0px 25px 0px; }
   .main_fox .article_fox .postheader_fox {
@@ -6547,35 +6556,23 @@ a:hover {
   color: #2a6596;
   text-decoration: none; }
 
-.endpost_fox {
-  background-color: #AAA;
-  height: 1px; }
-
-.subscribe_fox {
-  text-align: center;
-  padding: 0px 0px 20px 0px; }
-  .subscribe_fox .icon_fox {
-    padding: 0px 5px 0px 5px;
-    text-shadow: 1px 1px 1px #ccc; }
-  .subscribe_fox .fa-rss {
-    background-color: #428bca;
-    padding: 12px; }
-  .subscribe_fox .fa-envelope {
-    background-color: #428bca;
-    padding: 12px; }
-  .subscribe_fox .fa-twitter-fox {
-    background-color: #428bca;
-    padding: 12px; }
-  .subscribe_fox .fa-github-fox {
-    background-color: #428bca;
-    padding: 12px; }
-
 .pagination_fox .older-posts {
   border-radius: 0px;
   color: #333333; }
 .pagination_fox .newer-posts {
   border-radius: 0px;
   color: #333333; }
+
+.endpost_fox {
+  background-color: #AAA;
+  height: 1px; }
+
+.subscribe_fox {
+  text-align: center;
+  padding: 20px 0px 20px 0px; }
+  .subscribe_fox .icon_fox {
+    padding: 0px 5px 0px 5px;
+    text-shadow: 1px 1px 1px #ccc; }
 
 .footer-greeting {
   margin-top: 0px; }
