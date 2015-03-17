@@ -1,21 +1,5 @@
 {{!< default}}
-<div class="image-header-post" style="background-image: url('{{asset 'images/post-bg.jpg'}}');">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="header-text">
-                    {{#post}}
-                    <h1 class="post-title">{{title}}</h1>
-                    <h3 class="post-subtitle">
-                        <time class="date_fox" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time>
-                    </h3>
-                    {{#if tags}}<h4 class="post-subtitle posttags_fox">Posted Under: {{tags separator=", "}}</h4>{{/if}}
-                    {{/post}}
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+{{> post-header}}
 <div class="container">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -25,35 +9,6 @@
                     <div class="postcontent_fox" itemprop="articleBody">
                         {{content}}
                     </div>
-                    <!--
-                    {{#if tags}}
-                        <div class="posttags_fox">
-                            Tags: {{tags separator=" | "}}
-                        </div>
-                    {{/if}}
-                        <div class="sharepost_fox">
-                            <h4 class="share_fox">Share this post: &nbsp;</h4>
-                            <a class="share_fox icon-twitter" target="_blank" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"><span class="hidethis_fox">Twitter</span></a>
-                            <a class="share_fox icon-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u={{url absolute="true"}}"><span class="hidethis_fox">Facebook</span></a>
-                            <a class="share_fox icon-gplus" target="_blank" href="https://plus.google.com/share?url={{url absolute="true"}}"><span class="hidethis_fox">Google+</span></a>
-                        </div>
-                            {{#if author}}
-                                <footer class="postfooter_fox">
-                                    <address itemscope itemtype="http://schema.org/Person">
-                                    {{#if author.image}}
-                                        <div class="authorimage_fox"><img src="{{author.image}}" itemprop="image" /></div>
-                                    {{/if}}
-                                    <h4 class="authorname_fox"><span itemprop="author">{{author.name}}</span></h4>
-                                    {{#if author.website}}
-                                        <div class="authorwebsite_fox"><a href="{{author.website}}" itemprop="url">{{author.website}}</a></div>
-                                    {{/if}}
-                                    </address>
-                                    <div class="authorbio_fox">
-                                        <p>{{author.bio}}</p>
-                                    </div>
-                                </footer>
-                            {{/if}}
-                    -->
                     </article>
                 {{/post}}
                 {{#if pagination}}
