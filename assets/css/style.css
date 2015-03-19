@@ -1,4 +1,4 @@
-/*! Ghosttheme - v1.0.0 - 2015-03-16
+/*! Ghosttheme - v1.0.0 - 2015-03-18
 * Copyright (c) 2015 FlatFootFox - MIT License
 */
 
@@ -6516,6 +6516,9 @@ a.navbar-not-link:hover, a.navbar-not-brand:hover {
   padding: 5px 20px 5px 10px;
   margin: 0px 0px 20px 20px;
   color: #888; }
+.main_fox .postexceptimg_fox {
+  float: left;
+  width: 300px; }
 .main_fox .posttitle_fox {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 700;
