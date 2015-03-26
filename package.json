@@ -1,17 +1,17 @@
 {
-  "name": "Ghosttheme",
+  "name": "Ninamori",
   "version": "1.0.0",
-  "description": "A Boilerplate Theme for Ghost using Twitter Bootstrap 3, Font Awesome Icons, SASS, Bower, and Grunt",
+  "description": "A simple and clean theme for Ghost using Twitter Bootstrap 3, Font Awesome Icons, SASS, Bower, and Grunt",
   "author": {
-    "name": "FlatFootFox",
-    "email": "Hello@FlatFootFox.com",
-    "url": "http://flatfootfox.com"
+    "name": "Stuart Jones",
+    "email": "Me@Stuart-Jones.com",
+    "url": "http://stuart-jones.com"
   },
-  "homepage": "",
+  "homepage": "http://stuart-jones.com/ninamori-theme",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "http://github.com/imstuartjones/ninamori-theme"
   },
   "devDependencies": {
     "grunt": "~0.4.4",

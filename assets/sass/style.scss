@@ -37,7 +37,7 @@ a:hover {
     z-index: 99999;
 }
 
-#navbar-fox {
+#navbar-ghost {
 	margin: 0px;
 	border: 0px;
 	.navbar-toggle {
@@ -71,11 +71,15 @@ a:hover {
 	color: $navbar-inverse-color !important;
 }
 
-.navbar-not-link {
-	color: $navbar-inverse-link-color !important;
+.navbar-not-link > a {
+	color: $navbar-inverse-color !important;
 }
 
-a.navbar-not-link:hover, a.navbar-not-brand:hover {
+a.navbar-not-brand:hover {
+	color: $link-hover-color !important;
+}
+
+.navbar-not-link > a:hover {
 	color: $link-hover-color !important;
 }
 
@@ -195,7 +199,7 @@ a.navbar-not-link:hover, a.navbar-not-brand:hover {
 	}
 }
 
-.main_fox {
+.main_ghost {
 	img {
 		width: 100%;
 	}
@@ -209,11 +213,11 @@ a.navbar-not-link:hover, a.navbar-not-brand:hover {
 		margin: 0px 0px 20px 20px;
 		color: #888;
 	}
-	.postexceptimg_fox {
+	.postexceptimg_ghost {
 		float: left;
-		width: 300px;
+		height: 100%;
 	}
-	.posttitle_fox {
+	.posttitle_ghost {
 		font-family: $sans-font;
 		font-weight: $sans-weight-bold;
 		font-size: 36px;
@@ -223,13 +227,13 @@ a.navbar-not-link:hover, a.navbar-not-brand:hover {
 		}
 	}
 
-	.postexcerpt_fox {
+	.postexcerpt_ghost {
 		font-family: $sans-font;;
 		font-weight: $serif-weight;
 		font-size: 24px;
 	}
 
-	.postcontent_fox {
+	.postcontent_ghost {
 		font-family: $serif-font;
 		font-weight: $serif-weight;
 		font-size: 18px;
@@ -238,15 +242,15 @@ a.navbar-not-link:hover, a.navbar-not-brand:hover {
 		font-size: 24px;
 		padding: 5px 0px 5px 0px;
 	}
-	.article_fox {
+	.article_ghost {
 		margin: 25px 0px 25px 0px;
-		.postheader_fox {
+		.postheader_ghost {
 			margin: 10px 0px 10px 0px;
 		}
-		.posttitle_fox {
+		.posttitle_ghost {
 			margin: 10px 0px 10px 0px;
 		}
-		.date_and_tags_fox {
+		.date_and_tags_ghost {
 			font-family: 'Merriweather', serif;
 			font-style: italic;
 			font-weight: 300;
@@ -255,7 +259,7 @@ a.navbar-not-link:hover, a.navbar-not-brand:hover {
 			color: gray;
 		}
 	}
-	.posttags_fox {
+	.posttags_ghost {
 		a {
 			padding: 3px 6px 3px 6px;
 			background-color: lighten($background, 4%);
@@ -269,7 +273,7 @@ a.navbar-not-link:hover, a.navbar-not-brand:hover {
 }
 
 
-.pagination_fox {
+.pagination_ghost {
 	.older-posts {
 		border-radius: 0px;
 		color: #333333;
@@ -280,15 +284,15 @@ a.navbar-not-link:hover, a.navbar-not-brand:hover {
 	}
 }
 
-.endpost_fox {
+.endpost_ghost {
 	background-color: #AAA;
 	height: 1px;
 }
 
-.subscribe_fox {
+.subscribe_ghost {
 	text-align: center;
 	padding: 20px 0px 20px 0px;
-	.icon_fox {
+	.icon_ghost {
 		padding: 0px 5px 0px 5px;
 		text-shadow: 1px 1px 1px #ccc;
 
@@ -300,15 +304,15 @@ a.navbar-not-link:hover, a.navbar-not-brand:hover {
 	margin-top: 0px;
 }
 
-.footertext_fox {
+.footertext_ghost {
 	text-align: center;
 	padding: 0px 0px 20px 0px;
 }
 
-.fa-twitter-fox {
+.fa-twitter-ghost {
 	@extend .fa-twitter;
 }
 
-.fa-github-fox {
+.fa-github-ghost {
 	@extend .fa-github;
 }

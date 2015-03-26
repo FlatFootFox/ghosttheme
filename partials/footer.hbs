@@ -1,33 +1,33 @@
-<footer class="footer_fox">
-	<div class="container subscribe_fox">
+<footer class="footer_ghost">
+	<div class="container subscribe_ghost">
         <h3 class="footer-greeting">Want to hear more from me?</h3>
-        <a class="icon_fox" href="{{@blog.url}}/rss/">
+        <a class="icon_ghost" href="{{@blog.url}}/rss/">
             <span class="fa-stack fa-2x">
                 <i class="fa fa-circle fa-stack-2x"></i>
             <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
             </span>
         </a>
-        <a class="icon_fox" href="mailto:#">
+        <a class="icon_ghost" href="mailto:me@stuart-jones.com">
             <span class="fa-stack fa-2x">
                 <i class="fa fa-circle fa-stack-2x"></i>
             <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
             </span>
         </a>
-        <a class="icon_fox" href="http://twitter.com">
+        <a class="icon_ghost" href="http://twitter.com/ImStuartJones">
             <span class="fa-stack fa-2x">
                 <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-twitter-fox fa-stack-1x fa-inverse"></i>
+            <i class="fa fa-twitter-ghost fa-stack-1x fa-inverse"></i>
             </span>
         </a>
-        <a class="icon_fox" href="http://github.com">
+        <a class="icon_ghost" href="http://github.com/ImStuartJones">
             <span class="fa-stack fa-2x">
                 <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-github-fox fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-github-ghost fa-stack-1x fa-inverse"></i>
             </span>
         </a>
     </div>
 	<div class="container">
-		<div class="footertext_fox">All content copyright <a href="/">{{@blog.title}}</a> &copy; 2015 &bull; All rights reserved &bull; Proudly published with <a class="icon-ghost" href="http://tryghost.org" target="_blank">Ghost</a></div>
+		<div class="footertext_ghost">All content copyright <a href="/">{{@blog.title}}</a> &copy; 2015 &bull; All rights reserved &bull; Proudly published with <a class="icon-ghost" href="http://tryghost.org" target="_blank">Ghost</a></div>
 	</div>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -35,7 +35,7 @@
 <script type="text/javascript">
 jQuery(document).ready(function($) {
 	if($(window).width() < 900) {
-		$('#navbar-fox').addClass('navbar-not-top');
+		$('#navbar-ghost').addClass('navbar-not-top');
 		$('.navbar-brand').addClass('navbar-not-blue');
 		$('.navbar-brand').addClass('navbar-not-brand');
 		$('.navbar-link').addClass('navbar-not-link');
@@ -80,12 +80,12 @@ function hasScrolled() {
 
     if($(window).width() > 900) {
     if (st <= navbarHeight) {
-    	$('#navbar-fox').removeClass('navbar-not-top').addClass('navbar-top');
+    	$('#navbar-ghost').removeClass('navbar-not-top').addClass('navbar-top');
 		$('.navbar-brand').removeClass('navbar-not-brand');
 		$('.navbar-link').removeClass('navbar-not-link');
     }
     else {
-    	$('#navbar-fox').removeClass('navbar-top').addClass('navbar-not-top');
+    	$('#navbar-ghost').removeClass('navbar-top').addClass('navbar-not-top');
 		$('.navbar-brand').addClass('navbar-not-brand');
 		$('.navbar-link').addClass('navbar-not-link');
     }

@@ -3,16 +3,16 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <main class="main_fox" role="main">
+            <main class="main_ghost" role="main">
                 {{#post}}
-                    <article class="article_fox" role="article" itemscope itemtype="http://schema.org/Article">
-                    <div class="postcontent_fox" itemprop="articleBody">
+                    <article class="article_ghost" role="article" itemscope itemtype="http://schema.org/Article">
+                    <div class="postcontent_ghost" itemprop="articleBody">
                         {{content}}
                     </div>
                     </article>
                 {{/post}}
                 {{#if pagination}}
-                    <div class="pagination_fox">
+                    <div class="pagination_ghost">
                         {{{pagination}}}
                     </div>
                 {{/if}}
@@ -20,5 +20,5 @@
         </div>
     </div>
 </div>
-<hr class="endpost_fox">
+<hr class="endpost_ghost">
 {{> footer}}

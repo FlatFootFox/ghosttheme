@@ -74,20 +74,6 @@ module.exports = function(grunt) {
       }
     },   
 
-    /**
-     * Compresses SVG files
-     */
-    svgmin: {
-      build: {
-        files: [{
-          expand: true,
-          cwd: 'image_sources/',
-          src: '**/*.svg',
-          dest: 'assets/images/'
-        }]
-      }
-    },
-
     browserSync: {
       dev: {
         bsFiles: {
@@ -148,7 +134,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-svgmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-browser-sync');
@@ -158,8 +143,7 @@ module.exports = function(grunt) {
     [ 'libsass',
       'concat',
       'cssmin',
-      'imagemin', 
-      'svgmin',
+      'imagemin',
       'browserSync',
       'watch'
     ]
